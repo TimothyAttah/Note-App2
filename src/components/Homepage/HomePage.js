@@ -14,7 +14,7 @@ const HomePage = () => {
         <FirstSection />
         <SecondSection />
         <div className="btnPage">
-          <Link to="/second" className="mylinks">
+          <Link to="/dash/note" className="mylinks">
             <button id="get-started-btn">Get Started</button>
           </Link>
         </div>

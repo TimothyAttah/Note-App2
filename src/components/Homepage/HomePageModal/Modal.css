@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.modal{
+.modal {
   position: absolute;
   width: 365px;
   height: 590px;
@@ -15,13 +15,12 @@
   border-radius: 10px;
   opacity: 2;
   z-index: 2;
-  /*padding: 0 1rem; */
   cursor: pointer;
   box-sizing: border-box;
 }
 
 
-.btn{
+.btn {
  float: right;
   border: none;
   padding:0.5rem;
@@ -32,7 +31,7 @@
   cursor: pointer;
 }
 
-.modal-sixty{
+.modal-sixty {
   position: absolute;
   left: 25.25%;
   right: 34.25%;
@@ -45,7 +44,7 @@
   line-height: 35px;
 }
 
-.modal-ellipse{
+.modal-ellipse {
   position: absolute;
   left: 53.05%;
   right: 50.96%; 
@@ -54,7 +53,7 @@
   box-sizing: border-box;
 }
 
-.welcome{
+.welcome {
   position: absolute;
   left: 7.12%;
   right: 57.53%;
@@ -69,7 +68,7 @@
   width: 200px;
 }
 
-.details{
+.details {
   position: absolute;
   left: 7.12%;
   right: 34.25%;
@@ -83,7 +82,7 @@
   color: #777777;
 }
 
-.box-wrapper{
+.box-wrapper {
   position: absolute;
   left: 7.12%;
   right: 6.85%;
@@ -95,7 +94,7 @@
   border-radius: 10px;
 }
 
-.google-tag{
+.google-tag {
   position: absolute;
   left: 35.62%;
   right: 26.85%;
@@ -110,7 +109,7 @@
   width: 200px;
 }
 
- .box-wrapper img{
+ .box-wrapper img {
   position: absolute;
   left: 25.48%;
   right: 69.04%;
@@ -118,7 +117,7 @@
   bottom: 60.34%;
 }
 
-.line1{
+.line1 {
   position: absolute;
   left: 30.96%;
   right: 56.44%;
@@ -126,7 +125,7 @@
   bottom: 53.05%;
 }
 
-.or p{
+.or p {
   position: absolute;
   left: 47.12%;
   right: 47.12%;
@@ -141,7 +140,7 @@
 
 }
 
-.line2{
+.line2 {
   position: absolute;
   left: 55.07%;
   right: 32.33%;
@@ -149,7 +148,7 @@
   bottom: 53.05%;
 }
 
-#email-input{
+#email-input {
   position: absolute;
   left: 7.12%;
   right: 6.85%;
@@ -170,7 +169,7 @@
   outline: none;
 }
 
-#password-input{
+#password-input {
   position: absolute;
    left: 7.12%;
   right: 6.85%;
@@ -191,7 +190,7 @@
   outline: none;
 }
 
-.log-box{
+.log-box {
   position: absolute;
   left: 7.12%;
   right: 6.85;
@@ -210,11 +209,11 @@
   line-height: 19px;
 }
 
-.log-box:hover{
+.log-box:hover {
   background-color: rgba(0, 0, 255, 0.753);
 }
 
-.text-center{
+.text-center {
   position: absolute;
   left: 23.56%;
   right: 23.56%;
@@ -226,8 +225,6 @@
   font-size: 12px;
   line-height: 14px;
 }
-
-
 
 .text-center a{
   color: #2762f7;

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-//import Sixty from '../images/3Sixty.png'
 import Eclispse from '../images/Ellipse 16.png'
 
 
@@ -10,7 +9,7 @@ const Header = () => {
     <div>
       <header>
         <div>
-          <img src={Eclispse} alt="dot" className="ellipse" />
+          <img src={ Eclispse } alt="dot" className="ellipse" />
           <div className="sixty">
             <Link to="/">3Sixty</Link>
           </div>

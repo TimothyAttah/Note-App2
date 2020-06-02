@@ -4,17 +4,12 @@
 	box-sizing: border-box;
 }
 
-.container{
+.container {
 	max-width: 1376px;
 	height: 786px;
 	cursor: pointer;
 	position: relative;
 }
-
-/* .container-wrapper{
-	border: 5px solid darkgoldenrod;
-	margin: 0 30px;
-} */ 
 
 .sixty {
 	width: 115px;
@@ -35,11 +30,11 @@
 color: #000;
 }
 
-.sixty a:hover{
+.sixty a:hover {
 	color: #333;
 }
 
-.ellipse{
+.ellipse {
 	width: 12px;
 	height: 12px;
 	left: 102px;
@@ -48,7 +43,7 @@ color: #000;
 	position: absolute;
 }
 
-.login-btn{
+.login-btn {
 	width: 35px;
 	height: 23px;
 	top:12px;
@@ -62,7 +57,7 @@ color: #000;
 	color: #fff;
 }
 
-.signUp-btn{
+.signUp-btn {
 	width: 48px;
 	height: 23px;
 	position: absolute;
@@ -76,7 +71,7 @@ color: #000;
 
 }
 
-#login{
+#login {
 	position: absolute;
 	width: 83px;
 	height: 44px;
@@ -89,7 +84,7 @@ color: #000;
 	box-sizing: border-box;
 }
 
-#sign{
+#sign {
 	position: absolute;
 	width: 96px;
 	height: 44px;
@@ -102,7 +97,7 @@ color: #000;
 	box-sizing: border-box;
 }
 
-#sign:hover, #login:hover, #get-started-btn:hover{
+#sign:hover, #login:hover, #get-started-btn:hover {
 		background-color: rgba(0, 0, 173, 0.753);
 }
 
@@ -171,7 +166,7 @@ a:hover {
 	box-shadow: 0px 1px 4px rgba(0,  0,  0, 0.1);
 }
 
-.img-tag{
+.img-tag {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -206,7 +201,7 @@ a:hover {
 	border-radius: 5px 5px 0px 0px;
 }
 
-.lists1, .lists2, .lists3{
+.lists1, .lists2, .lists3 {
 	position: absolute;
 	width: 16px;
 	height: 14px;
@@ -214,7 +209,7 @@ a:hover {
 	top: 4px;
 }
 
-#list1{
+#list1 {
 	position: absolute;
 	width: 187px;
 	height: 22px;
@@ -227,7 +222,7 @@ a:hover {
 	line-height: 22px;
 }
 
-#list2{
+#list2 {
 	position: absolute;
 	width: 446px;
 	height: 22px;
@@ -240,7 +235,7 @@ a:hover {
 	line-height: 22px;
 }
 
-#list3{
+#list3 {
 	position: absolute;
 	width: 258px;
 	height: 22px;
@@ -253,7 +248,7 @@ a:hover {
 	line-height: 22px;
 }
 
-#get-started-btn{
+#get-started-btn {
 	position: absolute;
 	width: 177px;
 	height: 52px;
@@ -265,7 +260,7 @@ a:hover {
 	outline: none;
 }
 
- a #get-started-btn{
+ a #get-started-btn {
 	text-decoration: none;
 	color: #E1E1EC;
 	font-family: 'Open Sans', sans-serif;
@@ -275,7 +270,7 @@ a:hover {
 	font-style: normal;
 }
 
-footer{
+footer {
 	position: absolute;
 	width: 208px;
 	height: 15px;
@@ -289,7 +284,7 @@ footer{
 }
 
 /********************* Media Querries *********************/
-/*
+
 @media screen and (max-width: 1100px){
 .first-section-text {
   color: #f1f1f1;
@@ -373,6 +368,6 @@ footer{
 footer{
 	font-size: 14px;
 }
-} */
+} 
 
 

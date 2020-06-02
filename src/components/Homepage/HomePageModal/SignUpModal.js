@@ -7,7 +7,6 @@ import history from "../../../history";
 import "./Modal2.css";
 
 import Google from "../../images/google.3.jpg";
-//import Google from "../../images/Vector.png";
 import Eclispse from "../../images/Ellipse 16.png";
 import Line from "../../images/Line 20.png";
 
@@ -19,7 +18,7 @@ const SignUpModal = () => {
   const title = () => {
     return (
       <div>
-        <img src={Eclispse} alt="dot" className="modal-ellipse-2" />
+        <img src={ Eclispse } alt="dot" className="modal-ellipse-2" />
         <div className="modal-sixty-2">3Sixty</div>
       </div>
     );
@@ -40,8 +39,7 @@ const SignUpModal = () => {
     return (
       <div className="google-box-2">
         <div className="box-wrapper-2">
-          <img src={Google} alt="Google Logo" width="20px" className="img" />
-          {/* <img src={Google} alt="Google Logo" className="img" /> */}
+          <img src={ Google } alt="Google Logo" width="20px" className="img" />
           <p className="google-tag">Sign Up with Google</p>
         </div>
       </div>
@@ -51,9 +49,9 @@ const SignUpModal = () => {
   const or = () => {
     return (
       <div className="or-2">
-        <img src={Line} alt="line" className="line3" />
+        <img src={ Line } alt="line" className="line3" />
         <p>OR</p>
-        <img src={Line} alt="line" className="line4" />
+        <img src={ Line } alt="line" className="line4" />
       </div>
     );
   };
@@ -90,18 +88,18 @@ const SignUpModal = () => {
   return (
     <div className="sing-up-modal">
       <HomePage />
-      <Backdrop onClick={() => history.push("/")} />
+      <Backdrop onClick={ () => history.push("/") } />
       <Modal
-        closeBtn={closeBtn()}
-        title={title()}
-        welcome={welcome()}
+        closeBtn={ closeBtn() }
+        title={ title() }
+        welcome={ welcome() }
         details="Enter your personal details to start your journey today"
-        googleBox={googleBox()}
-        or={or()}
-        inputBox={inputBox()}
-        loginBox={loginBox()}
-        signUp={signUp()}
-        onDismiss={() => history.push("/")}
+        googleBox={ googleBox() }
+        or={ or() }
+        inputBox={ inputBox() }
+        loginBox={ loginBox() }
+        signUp={ signUp() }
+        onDismiss={ () => history.push("/") }
       />
     </div>
   );
