@@ -13,6 +13,7 @@ const SideBar = () => {
         </p>
         <SideBarLinks text="Personal" />
       </div>
+      <p className="border"></p>
       <div className="second-section-nav side-bar">
         <h4>Visit Plateau State</h4>
         <p className="p-tag">
@@ -22,6 +23,7 @@ const SideBar = () => {
         </p>
         <SideBarLinks text="Travel" />
       </div>
+      <p className="border"></p>
       <div className="third-section-nav side-bar">
         <h4>Birthday Debrief</h4>
         <p className="p-tag">
@@ -31,6 +33,7 @@ const SideBar = () => {
         </p>
         <SideBarLinks text="Personal" />
       </div>
+      <p className="border"></p>
       <div className="fourth-section-nav side-bar">
         <h4>Learn Darts</h4>
         <p className="p-tag">
@@ -39,6 +42,7 @@ const SideBar = () => {
         </p>
         <SideBarLinks text="Personal" />
       </div>
+      <p className="border"></p>
     </div>
   );
 }

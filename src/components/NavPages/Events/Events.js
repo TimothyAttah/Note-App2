@@ -1,11 +1,11 @@
 import React from 'react';
 import './event.css'
 
-const Events = ({ events, deleteEvent, toggleMenu }) => {
+const Events = ({ events, deleteEvent }) => {
   const eventList = events.length ? (
     events.map(event => {
       return (
-        <div key={event.id} className="todo-content" onClick={ () =>{toggleMenu(event.id)}}>
+        <div key={ event.id } className="todo-content">
           <span>{event.content} </span>
           <span
             onClick={() => {
@@ -14,7 +14,6 @@ const Events = ({ events, deleteEvent, toggleMenu }) => {
             className="delete-todo">
             X
           </span>
-
         </div>
       );
     })

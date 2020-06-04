@@ -19,15 +19,16 @@ class SideBarLinks extends Component {
     return (
       <div>
         <div className="second-section-links">
-          <p className="personal"> { this.props.text }</p>
-
-          <p className="hours-style">23 Hours ago</p>
-          <p className="dots" id="dots" onClick={ this.toggleMenu }>
-            <img src={ DotsIcon } alt="Dots icon" />
-          </p>
+          <p className="personal"> {this.props.text}</p>
+          <div className="personal-left">
+            <p className="hours-style">23 Hours ago</p>
+            <p className="dots" id="dots" onClick={this.toggleMenu}>
+              <img src={DotsIcon} alt="Dots icon" />
+            </p>
+          </div>
         </div>
         <div>
-          <p> { this.state.show && <SideBarModal /> }</p>
+          <p> {this.state.show && <SideBarModal />}</p>
         </div>
       </div>
     );

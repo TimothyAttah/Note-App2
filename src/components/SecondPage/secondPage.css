@@ -8,20 +8,23 @@
     cursor: pointer;
     max-width: 1317px;
     margin: 0 auto;
-    background: #F7FBFD;
+    background: #ffffff;
     border-radius: 10px 10px 0px 0px;
 }
 
 .headerPage {
     display: flex;
-    width: 500px;
+    max-width: 1317px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0;
 }
 
 .sixty-note {
-    left: 2.10%;
+    left: 4.10%;
     right: 2.50%;
     top: 1.05%;
     bottom: 0%;
@@ -30,6 +33,7 @@
     font-style: normal;
     font-size: 36px;
     line-height: 35px;
+    margin-left: 20px;
 }
 
 .ellipse-note {
@@ -46,11 +50,12 @@
 }
 
 .header-logo {
+    position: absolute;
     width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
+    left: 220px;
 }
 
 .header-logo img {
@@ -75,15 +80,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E5E5E5;
-    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navLinks ul {
@@ -172,7 +177,6 @@ nav .note-icon {
     display: flex;
     color: #fff;
     font-size: 15px;
-    margin-bottom: 5px;
 }
 
 .login-signUpPage ul li {
@@ -219,31 +223,27 @@ a {
     color: #fff;
 }
 
-#main-content-wrapper {
-    margin: 0 20px;
-}
-
 #second-sectionPage {
     width: 100%;
-    margin-top: 20px;
+    display: flex;
 }
 
 #second-section-wrapper {
+    width: 100%;
     display: flex;
 }
 
 #section-nav {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background: #E5E5E5;
+    width: 360px;
+    background: #ffffff;
+    height: 916px;
+    border-bottom: 1px solid #EEEEEE;
+    /* overflow-y: scroll; */
 }
 
 .side-bar {
-    margin-top: 20px;
-    border: 1px solid #eeeeee;
+    margin-left: 31px;
+    margin-right: 31px;
 }
 
 .side-bar h4 {
@@ -253,6 +253,7 @@ a {
     font-size: 18px;
     line-height: 161.3%;
     color: #444444;
+    margin-top: 30px;
 }
 
 .p-tag {
@@ -263,6 +264,14 @@ a {
     line-height: 161.3%;
     color: #777777;
     margin-top: 15px;
+    width: 294px;
+    height: 84px;
+    margin-bottom: 10px;
+}
+
+.border {
+    border-bottom: 1px solid #EEEEEE;
+    margin-top: 20px;
 }
 
 .p-tag1 {
@@ -283,6 +292,7 @@ a {
     font-size: 13px;
     line-height: 161.3%;
     color: #CCCCCC;
+    margin-right: 15px;
 }
 
 .second-section-links {
@@ -309,6 +319,10 @@ a {
     align-items: center;
 }
 
+.personal-left {
+    display: flex;
+}
+
 .dots {
     width: 50px;
     height: 26px;
@@ -322,19 +336,20 @@ a {
 }
 
 #section-main-body {
-    margin: 0 58px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background: #E5E5E5;
+    background: #ffffff;
 }
 
-.section-main-body-wrapper{
-    margin: 0px 30px 0px 50px;
+.section-main-body-wrapper {
+    width: 675px;
+    height: 50%;
+    margin-left: 60px;
+    margin-top: 40px;
 }
 
 #section-main-body h2 {
-    margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -346,8 +361,8 @@ a {
 .content-modal-wrapper {
     display: flex;
     margin-top: 20px;
-    margin-right: 20px;
     height: 50%;
+    margin-left: 90px;
 }
 
 .content-modal2 {
@@ -388,42 +403,54 @@ a {
 }
 
 #modal-container {
-    position: fixed;
-    display: flex;
     width: 143px;
     height: 124px;
-    border: 1px solid #ccc;
+    position: fixed;
+    display: flex;
     box-sizing: border-box;
-    background-color: #fff;
     left: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 #links-container {
+    width: 200px;
+    height: 160px;
     position: fixed;
     display: flex;
-    width: 143px;
-    height: 124px;
-    border: 1px solid #ccc;
     box-sizing: border-box;
-    background-color: #fff;
-    right: 120px;
+    right: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
-#modal-container li:hover,
-#links-container li:hover {
+#modal-container li:hover, #links-container li:hover {
     color: #356DFB;
 }
 
-
-
-#modal-container ul,
-#links-container ul {
+#modal-container ul, #links-container ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-#modal-container li,
+#modal-container li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 161.3%;
+    color: #CCCCCC;
+    display: flex;
+    margin: 0px auto;
+    margin-bottom: 5px;
+    padding: 3px;
+    width: 143px;
+    padding-left: 20px;
+}
+
 #links-container li {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -433,10 +460,24 @@ a {
     color: #CCCCCC;
     display: flex;
     margin: 0px auto;
+    margin-bottom: 12px;
     padding: 5px;
+    width: 200px;
+    padding-left: 20px;
 }
 
-#modal-container ul .edit-page,
+#modal-container ul .edit-page {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 161.3%;
+    background: rgba(53, 109, 251, 0.07);
+    color: #356DFB;
+    border-radius: 3px;
+    width: 143px;
+}
+
 #links-container ul .edit-page {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -446,41 +487,45 @@ a {
     background: rgba(53, 109, 251, 0.07);
     color: #356DFB;
     border-radius: 3px;
-    width: 138px;
+    width: 200px;
 }
 
-#modal-container img,
+#modal-container img {
+    margin-right: 18px;
+    color: #356DFB;
+}
+
 #links-container img {
-    margin-right: 20px;
+    margin-right: 18px;
+    color: #356DFB;
 }
 
+#modal-container img.delete-icon {
+    color: #fff;
+    background-color: #356DFB;
+}
 
 /***************************** Media Query *******************************/
+
 @media screen and (max-width:800px) {
     .nav-wrapper {
         display: none;
     }
-
     nav {
         display: none;
     }
-
     #second-section-wrapper {
         display: block;
     }
-
     .content-modal-wrapper {
         display: none;
     }
-
     #section-nav {
         width: 100%;
     }
-
     .side-bar {
         margin-top: 30px;
     }
-
     #section-main-body {
         width: 70%;
         margin-top: 10px;

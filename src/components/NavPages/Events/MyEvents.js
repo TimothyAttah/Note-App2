@@ -1,13 +1,12 @@
 import React from 'react';
 import history from '../../../history'
-import Todos from './Events';
-import AddTodo from './AddEvent';
+import Events from './Events';
+import AddEvent from './AddEvent';
 import  './event.css';
 
 class MyEvents extends React.Component{
   state = {
-    events: [ ],
-    toggleMenu: true
+    events: [ ]
   }
 
   deleteEvent = (id) => {
@@ -26,24 +25,16 @@ class MyEvents extends React.Component{
       events
     })
   }
-
-  toggleMenu = () => {
-    this.setState({
-      toggleMenu: !this.state.toggleMenu
-    })
-  };
   
   render () {
-    
     return (
       <div className="todo-container">
         <h1 className="todo-header">My Event's</h1>
-        <Todos
+        <Events
           events={this.state.events}
           deleteEvent={this.deleteEvent}
-          toggleMenu={this.toggleMenu}
         />
-        <AddTodo addEvent={this.addEvent} />
+        <AddEvent addEvent={this.addEvent} />
         <div>
           <button
             className="cancel-btn"

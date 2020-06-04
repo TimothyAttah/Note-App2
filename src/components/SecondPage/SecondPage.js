@@ -16,8 +16,8 @@ class SecondPage extends React.Component{
         </nav>
         <div id="main-content-wrapper">
           <section id="second-sectionPage">
+            <SideBar />
             <div id="second-section-wrapper">
-              <SideBar />
               <Content />
               <ContentModal />
             </div>
