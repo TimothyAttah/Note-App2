@@ -1,45 +1,47 @@
 import React from "react";
 import history from "../../../history";
 import DeleteModalBox from "../../SecondPage/SecondPageModal/DeleteModalBox";
-import SecondPage from "../../SecondPage/SecondPage";
+import Header from "../../SecondPage/Header";
 import Backdrop from "../../Backdrop/Backdrop";
 import "../../SecondPage/SecondPageModal/modal.css";
-
+import SettingNav from './SettingNav'
 import Warning from "../../images/warning.png";
 
-class Settings extends React.Component {
-  render() {
-    const closeBtn = () => <div className="close-btn">X</div>;
 
-    const logo = () => (
-      <div className="warning">
-        <img src={Warning} alt="Warning logo" />
+  const closeBtn = () => <div className="close-btn">X</div>;
+
+  const logo = () => (
+    <div className="warning">
+      <img src={Warning} alt="Warning logo" />
+    </div>
+  );
+
+  const btn = () => {
+    return (
+      <div className="btn-box">
+        <div>
+          <button
+            className="cancel-btn"
+            onClick={() => history.push("/dash/note")}>
+            Reset
+          </button>
+        </div>
+        <div>
+          <button
+            className="delete-btn"
+            onClick={() => history.push("/dash/note")}>
+            Cancel
+          </button>
+        </div>
       </div>
     );
+  };
 
-    const btn = () => {
-      return (
-        <div className="btn-box">
-          <div>
-            <button
-              className="cancel-btn"
-              onClick={() => history.push("/dash/note")}>
-             Reset
-            </button>
-          </div>
-          <div>
-            <button
-              className="delete-btn"
-              onClick={() => history.push("/dash/note")}>
-             Cancel
-            </button>
-          </div>
-        </div>
-      );
-    };
+const Settings = () => {
     return (
       <div>
-        <SecondPage />
+        <Header />
+        <nav> <SettingNav /> </nav>
         <Backdrop onClick={() => history.push("/dash/note")} />
         <div className="modal-second">
           <DeleteModalBox
@@ -52,6 +54,5 @@ class Settings extends React.Component {
       </div>
     );
   }
-}
 
 export default Settings;

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.modal2 {
+.modal-sign-up {
   position: absolute;
   width: 365px;
   height: 719px;
@@ -88,7 +88,7 @@
   right: 6.58%;
   top: 27.96%;
   bottom: 65.65%;
-  background: rgba(196, 196, 196, 0.5 );
+  background: #fff;
   border: 1.5px solid #356DFB;
   box-sizing: content-box;
   border-radius: 10px;
@@ -148,13 +148,13 @@
   bottom: 61.47%;
 }
 
-#name-input {
+#name-input-modal {
   position: absolute;
   left: 7.12%;
   right: 6.85%;
   top: 43.53%;
   bottom: 50.07%;
-  background: rgba(196, 196, 196, 0.5);
+  background: #fff;
   border: 1px solid #DEDFEC;
   box-sizing: border-box;
   border-radius: 10px;
@@ -169,13 +169,13 @@
   outline: none;
 }
 
-#username-input {
+#username-input-modal {
   position: absolute;
   left: 7.12%;
   right: 6.85%;
   top: 52.71%;
   bottom: 40.89%;
-  background: rgba(196, 196, 196, 0.5);
+  background: #fff;
   border: 1px solid #DEDFEC;
   box-sizing: border-box;
   border-radius: 10px;
@@ -190,13 +190,13 @@
   outline: none;
 }
 
-#email-input-box {
+#email-input-modal {
    position: absolute;
    left: 7.12%;
   right: 6.85%;
   top: 61.89%;
   bottom: 31.71%;
-  background: rgba(196, 196, 196, 0.5);
+  background: #fff;
   border: 1px solid #DEDFEC;
   box-sizing: border-box;
   border-radius: 10px;
@@ -211,13 +211,13 @@
   outline: none;
 }
 
-#password-input-box {
+#password-input-modal {
   position: absolute;
   left: 7.12%;
   right: 6.85%;
   top: 71.07%;
   bottom: 22.53%;
-  background: rgba(196, 196, 196, 0.5);
+  background: #fff;
   border: 1px solid #DEDFEC;
   box-sizing: border-box;
   border-radius: 10px;

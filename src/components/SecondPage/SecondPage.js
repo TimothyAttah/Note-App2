@@ -6,8 +6,7 @@ import Content from './Content';
 import ContentModal from './ContentModal';
 import './secondPage.css';
 
-class SecondPage extends React.Component{
-  render() {
+const SecondPage = () => {
     return (
       <div id="main-container2">
         <Header />
@@ -26,7 +25,6 @@ class SecondPage extends React.Component{
       </div>
     );
   }
-}
 
 export default SecondPage;
 

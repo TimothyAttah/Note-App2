@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./secondPage.css";
 
@@ -8,8 +8,7 @@ import PrintLogo from "../images/print.png";
 import Archive from "../images/archieve2.png";
 
 
-class ContentLinks extends Component {
-  render() {
+const ContentLinks = () => {
     return (
       <React.Fragment>
         <div id="links-container">
@@ -40,6 +39,5 @@ class ContentLinks extends Component {
       </React.Fragment>
     );
   }
-}
 
 export default ContentLinks;

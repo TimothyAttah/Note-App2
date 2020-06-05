@@ -50,7 +50,7 @@ label {
   margin-top: 20px;
 }
 
-input {
+.event-input {
   width: 100%;
   font-size: 14px;
   border: none;

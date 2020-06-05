@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import Eclispse from '../images/Ellipse 16.png'
+import Eclispse from '../images/Ellipse 16.png';
 
 
 const Header = () => {

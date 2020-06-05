@@ -1,25 +1,25 @@
 import React from 'react';
 import history from '../../../history';
-import Backdrop from '../../Backdrop/Backdrop'
+import Header from '../../SecondPage/Header';
+import ArchiveNav from './ArchiveNav';
 import '../Events/event.css';
 
 const Archive = () => {
   return (
     <div>
-      <Backdrop onClick={() => history.push("/dash/note")} />
-      <div className="archive-box">
-        <h1 className="todo-header">Archives</h1>
-        <h3 className="sub-title">
-          Number of Archives: <span className="zero">0</span>
-        </h3>
-        <div>
-          <button
-            className="cancel-btn arch"
-            onClick={() => history.push("/dash/note")}>
-            Note Page
-          </button>
+      <Header />
+      <nav><ArchiveNav /></nav>
+        <div className="archive-box">
+          <h1 className="todo-header">Archives</h1>
+          <h3 className="sub-title">
+            Number of Archives: <span className="zero">0</span>
+          </h3>
+            <button
+              className="cancel-btn arch"
+              onClick={() => history.push("/dash/note")}>
+              Note Page
+            </button>
         </div>
-      </div>
     </div>
   );
 }

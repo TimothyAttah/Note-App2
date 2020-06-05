@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import SideBarModal from "./SideBarModal";
-
 import DotsIcon from '../images/dots2.png';
 
 class SideBarLinks extends Component {

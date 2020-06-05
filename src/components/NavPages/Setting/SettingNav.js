@@ -1,28 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import NoteIcon from "../images/note.png";
-import Todo from "../images/todo.png";
-import Event from "../images/event.png";
-import Archive from "../images/archieve.png";
-import Setting from "../images/setting.png";
-import Plus from '../images/plus.png';
+import NoteIcon from "../../images/note2.svg";
+import Todo from "../../images/todo.png";
+import Event from "../../images/event.png";
+import Archive from "../../images/archieve.png";
+import Setting from "../../images/setting22.svg";
+import Plus from "../../images/plus.png";
 
-
-const Nav = () => {
+const SettingNav = () => {
   return (
     <div className="nav-wrapper">
       <div className="navLinks">
         <ul className="nav-ul">
           <Link to="/dash/note">
-            <li className="note-icon">
+            <li className="hovering">
               <img src={ NoteIcon } alt="note-icon2" />
               <p>Notes</p>
-              <p className="notes-num-10">10</p>
+              <p className="num-10">10</p>
             </li>
           </Link>
 
-          <Link to="/note/todos" >
+          <Link to="/note/todos">
             <li className="hovering">
               <img src={ Todo } alt="Todo" />
               <p>Todos</p>
@@ -46,8 +45,8 @@ const Nav = () => {
             </li>
           </Link>
           <Link to="/note/setting">
-            <li className="hovering">
-              <img src={ Setting } alt="setting" />
+            <li className="note-icon">
+              <img src={ Setting } alt="setting" className="setting-logo" />
               <p>Setting</p>
             </li>
           </Link>
@@ -69,6 +68,6 @@ const Nav = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Nav;
+export default SettingNav;

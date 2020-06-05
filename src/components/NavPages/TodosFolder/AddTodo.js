@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './mytodo.css'
+import React, { Component } from 'react';
+import './mytodo.css';
 
 export class AddTodo extends Component {
   state = {
@@ -16,7 +16,6 @@ export class AddTodo extends Component {
     this.setState({title: ""})
   }
 
-  
   render () {
     return (
       <div>
@@ -28,7 +27,7 @@ export class AddTodo extends Component {
             style={{ flex: "10", padding: "5px" }}
             value={ this.state.title }
             onChange={ this.handleChange }
-            className="input-box"
+            className="input-box-todo"
           />
           <input
             type="submit"
@@ -41,6 +40,5 @@ export class AddTodo extends Component {
     );
   }
 }
-
  
 export default AddTodo;

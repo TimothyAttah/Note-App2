@@ -1,5 +1,4 @@
 import React from 'react';
-
 import logo from '../images/Component 11.png';
 import Coding from "../images/Rectangle 3.2.png";
 import Gym from "../images/Rectangle 3.png";

@@ -1,10 +1,9 @@
-import React from 'react'
-import {Link } from 'react-router-dom'
-import Header from './Header'
-import FirstSection from './FirstSection'
-import SecondSection from './SecondSection'
-
-import './home.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Header from './Header';
+import FirstSection from './FirstSection';
+import SecondSection from './SecondSection';
+import './home.css';
 
 const HomePage = () => {
   return (

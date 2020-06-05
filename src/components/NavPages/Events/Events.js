@@ -1,5 +1,5 @@
 import React from 'react';
-import './event.css'
+import './event.css';
 
 const Events = ({ events, deleteEvent }) => {
   const eventList = events.length ? (

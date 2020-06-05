@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ContentLinks from "./ContentLinks";
 import './secondPage.css'
 
@@ -7,7 +7,7 @@ import PlusIcon from '../images/plus2.png';
 import MinusIcon from '../images/minus.png';
 import LineIcon from '../images/Line 10.png';
 
-class ContentModal extends Component {
+class ContentModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = { show: false };

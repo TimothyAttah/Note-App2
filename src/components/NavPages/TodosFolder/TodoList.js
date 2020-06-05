@@ -1,14 +1,16 @@
 import React from 'react';
 import history from '../../../history'
+import Header from '../../SecondPage/Header'
+import TodoNav from './TodoNav'
 import Todos from './Todos';
 import TodoHeader from './TodoHeader';
 import AddTodo from './AddTodo';
-
 import './mytodo.css';
 
 class TodoList extends React.Component {
   state = { 
-    todos: [  ]
+    todos: [],
+    completed: true
   }
   
   markComplete = (id) => {
@@ -31,42 +33,46 @@ class TodoList extends React.Component {
 
   addTodo = (title) => {
     title.id = Math.random()
-    // if (localStorage.getItem("todos") == null) {
-    //   let todos = [...this.state.todos, title];
-    //   todos.push(title)
-    //   localStorage.setItem("todos", JSON.stringify("todos"))
-    // } else {
-    //   let todos = JSON.parse(localStorage.getItem("todos"))
-    //    todos = [...this.state.todos, title];
-    //   todos.push(title)
-    //   localStorage.setItem("todos", JSON.stringify("todos"))
-    // }
-    // this.setState({todos: JSON.parse(localStorage.getItem("todos"))})
     let todos = [...this.state.todos, title]
-    this.setState({todos})
+    this.setState({ todos })
   }
 
-  componentDidMount () {
-    console.log('my component mounted')
+  componentWillMount () {
+    localStorage.getItem('todos') && this.setState({
+      todos: JSON.parse(localStorage.getItem('todos')),
+      completed: false
+    })
+  }
+  
+  componentWillUpdate (nextProps, nextState) {
+    // console.log('my component mounted')
     // get todos from localstorage
     // set todos on localstate
+    localStorage.setItem("todos", JSON.stringify(nextState.todos))
+    localStorage.setItem('contactDate', Date.now())
   }
 
   render() { 
     return (
-      <div className="todo-container">
-        <TodoHeader />
-        <AddTodo addTodo={this.addTodo} />
-        <Todos
-          todos={this.state.todos}
-          markComplete={this.markComplete}
-          handleDelete={this.handleDelete}
-        />
-        <button
-          className="cancel-btn"
-          onClick={() => history.push("/dash/note")}>
-          Home Page
-        </button>
+      <div>
+        <Header />
+        <nav>
+          <TodoNav />
+        </nav>
+        <div className="todo-container">
+          <TodoHeader />
+          <AddTodo addTodo={this.addTodo} />
+          <Todos
+            todos={this.state.todos}
+            markComplete={this.markComplete}
+            handleDelete={this.handleDelete}
+          />
+          <button
+            className="cancel-btn"
+            onClick={() => history.push("/dash/note")}>
+            Home Page
+          </button>
+        </div>
       </div>
     );
   }

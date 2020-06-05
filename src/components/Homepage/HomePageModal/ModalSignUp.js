@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import history from "../../../history";
-import "./Modal2.css";
+import "./ModalSignUp.css";
 
-const Modal2 = (props) => {
+const ModalSignUp = (props) => {
   return ReactDOM.createPortal(
     <div onClick={ props.onDismiss }>
       <div onClick={ (e) => e.stopPropagation() }>
-        <div className="modal2 ">
+        <div className="modal-sign-up ">
           <div>
             <div onClick={ () => history.push("/") }>{ props.closeBtn }</div>
           </div>
@@ -28,4 +28,4 @@ const Modal2 = (props) => {
   );
 }
 
-export default Modal2;
+export default ModalSignUp;

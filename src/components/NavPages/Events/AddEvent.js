@@ -24,7 +24,7 @@ class AddEvent extends React.Component {
       <div className="todo-input">
         <form onSubmit={ this.handleSubmit }>
           <label>Add new event:</label>
-          <input type="text" onChange={ this.handleChange } value={ this.state.content } />
+          <input type="text" onChange={ this.handleChange } value={ this.state.content } className="event-input" />
         </form>
       </div>
      );

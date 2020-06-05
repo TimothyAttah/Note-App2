@@ -226,6 +226,7 @@ a {
 #second-sectionPage {
     width: 100%;
     display: flex;
+    margin-top: 20px;
 }
 
 #second-section-wrapper {
@@ -234,11 +235,11 @@ a {
 }
 
 #section-nav {
-    width: 360px;
+    width: 560px;
     background: #ffffff;
-    height: 916px;
+    height: 516px;
     border-bottom: 1px solid #EEEEEE;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 
 .side-bar {
@@ -362,7 +363,7 @@ a {
     display: flex;
     margin-top: 20px;
     height: 50%;
-    margin-left: 90px;
+    margin-left: 70px;
 }
 
 .content-modal2 {
@@ -430,10 +431,16 @@ a {
     color: #356DFB;
 }
 
+#modal-container ul a:hover, #modal-container ul li img:hover{
+    color: red;
+    background: rgba(0, 0, 173, 0.753);
+}
+
 #modal-container ul, #links-container ul {
     padding: 0;
     margin: 0;
     list-style: none;
+   width: 143px;
 }
 
 #modal-container li {
@@ -444,7 +451,7 @@ a {
     line-height: 161.3%;
     color: #CCCCCC;
     display: flex;
-    margin: 0px auto;
+   
     margin-bottom: 5px;
     padding: 3px;
     width: 143px;
@@ -504,6 +511,7 @@ a {
     color: #fff;
     background-color: #356DFB;
 }
+
 
 /***************************** Media Query *******************************/
 

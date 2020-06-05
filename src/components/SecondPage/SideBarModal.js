@@ -13,24 +13,27 @@ class SideBarModal extends Component {
       <React.Fragment>
         <div id="modal-container">
           <ul>
-            <Link to="/edit/note" id="edit-page" >
+            <Link to="/edit/note" id="edit-page">
               <li className="edit-page">
-                <img src={ EditLogo } alt="Edit"  /> Edit
+                <img src={EditLogo} alt="Edit" /> Edit
               </li>
             </Link>
-            <Link to="/delete/note" id="deleteNote1">
+
+            <li>
+              <Link to="/delete/note" id="deleteNote1">
+                <img src={DeleteIcon} alt="Delete" className="delete-icon" />{" "}
+                Delete
+               </Link>
+              </li>
+           
+            <Link to="#">
               <li>
-                <img src={ DeleteIcon } alt="Delete" className="delete-icon" /> Delete
+                <img src={PrintLogo} alt="Print" /> Print
               </li>
             </Link>
             <Link to="#">
               <li>
-                <img src={ PrintLogo } alt="Print"  /> Print
-              </li>
-            </Link>
-            <Link to="#">
-              <li>
-                <img src={ Archive } alt="Archive" /> 
+                <img src={Archive} alt="Archive" />
                 Archive
               </li>
             </Link>

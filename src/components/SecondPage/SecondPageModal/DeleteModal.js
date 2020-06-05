@@ -4,35 +4,39 @@ import DeleteModalBox from './DeleteModalBox';
 import SecondPage from '../SecondPage';
 import Backdrop from '../../Backdrop/Backdrop';
 import './modal.css';
-
 import Warning from "../../images/warning.png";
 
-class DeleteModal extends React.Component{
-  render () {
-    const closeBtn = () => <div className="close-btn">X</div>
-     
-    const logo = () => <div className="warning"><img src={ Warning } alt="Warning logo" /></div>
 
-    const btn = () => {
-      return (
-        <div className="btn-box">
-          <div>
-            <button
-              className="cancel-btn"
-              onClick={() => history.push("/dash/note")}>
-              Cancel
-            </button>
-          </div>
-          <div>
-            <button
-              className="delete-btn"
-              onClick={() => history.push("/dash/note")}>
-              Delete
-            </button>
-          </div>
-        </div>
-      );
-    }
+ const closeBtn = () => <div className="close-btn">X</div>;
+
+ const logo = () => (
+   <div className="warning">
+     <img src={Warning} alt="Warning logo" />
+   </div>
+ );
+
+ const btn = () => {
+   return (
+     <div className="btn-box">
+       <div>
+         <button
+           className="cancel-btn"
+           onClick={() => history.push("/dash/note")}>
+           Cancel
+         </button>
+       </div>
+       <div>
+         <button
+           className="delete-btn"
+           onClick={() => history.push("/dash/note")}>
+           Delete
+         </button>
+       </div>
+     </div>
+   );
+ };
+
+const DeleteModal = () => {
     return (
       <div>
         <SecondPage />
@@ -48,6 +52,5 @@ class DeleteModal extends React.Component{
       </div>
     );
   }
-}
 
 export default DeleteModal;

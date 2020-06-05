@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Todo from "../images/Rectangle 3.1.png";
+
 
 const FirstSection = () => {
   return (
